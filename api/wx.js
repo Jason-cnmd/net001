@@ -3,7 +3,7 @@ const crypto = require('crypto');
 
 module.exports = (req, res) => {
     const { signature, timestamp, nonce, echostr } = req.query;
-    const token = 'shegongku'; // 这里填你准备在微信后台填的 Token
+    const token = 'net001'; // 这里填你准备在微信后台填的 Token
 
     // 1. 验证微信服务器（这是填 URL 成功的关键）
     const array = [token, timestamp, nonce].sort();
